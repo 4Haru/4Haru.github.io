@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+:root {
+    --fsize: 4vmin;
+    --widthSize: 150%;
+}
+
+.footer {
+    flex-grow: 1;
+}
+
+.content {
+    display: grid;
+    margin: 4vmin;
+    grid-template-columns: 90vmin;
+    gap: 3vmin;
+}
+
+.contentBody {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+.contentBody > * {
+    flex-basis: 100%;
+}
+
+.contentFlex {
+    display: flex;
+    margin: 4vmin;
+    column-gap: 3vmin;
+    row-gap: 3vmin;
+}
+
+.verticalFlex {
+    flex-direction: column;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#aboutUs {
+
+}
+
+#aboutUs:hover > #members {
+    letter-spacing: 0;
+}
+
+.middleCenter {
+    justify-content: center;
+    margin-top: 25vmin;
+    margin-bottom: 25vmin;
+}
+
+.courseTitleWeb {
+    color: white;
+    text-decoration: none;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    padding: 3vmin;
+    border: 1px solid white;
+    background-color: #1a1a1a;
+    box-shadow: black 0 0;
+    transition: 0.25s ease;
+}
+
+.fullWidth {
+    flex: 1;
+    row-gap: 3vmin;
+    column-gap: 1rem;
+}
+
+.courseTitleWeb > hr {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.courseTitleWeb:hover {
+    text-shadow: #3e3d3d 0.4vmin 0.4vmin;
+    transform: translate(0, -5%);
+    letter-spacing: 0.25rem;
+    background-color: #2a2a2a;
+    transition: 0.25s ease;
+}
+
+.webDevCourTitle:hover {
+    letter-spacing: 0;
+    box-shadow: lawngreen 1vmin 1vmin;
+    transition: 0.25s ease;
+}
+
+.html:hover {
+    box-shadow: #ff8928 1vmin 1vmin;
+    transition: 0.25s ease;
+}
+
+.css:hover {
+    box-shadow: #48baff 1vmin 1vmin;
+    transition: 0.25s ease;
+}
+
+.js:hover {
+    box-shadow: #ff4128 1vmin 1vmin;
+    transition: 0.25s ease;
+}
+
+.node:hover {
+    box-shadow: #9ef06e 1vmin 1vmin;
+    transition: 0.25s ease;
+}
+
+.fullStackDevCourTitle:hover {
+    letter-spacing: 0;
+    box-shadow: #fc2600 1vmin 1vmin;
+    transition: 0.25s ease;
+}
+
+.java:hover {
+    box-shadow: #ff2828 1vmin 1vmin;
+    transition: 0.25s ease;
+}
+
+.py:hover {
+    box-shadow: #f2d21f 1vmin 1vmin;
+    transition: 0.25s ease;
+}
+
+.cpp:hover {
+    box-shadow: #ffa528 1vmin 1vmin;
+    transition: 0.25s ease;
+}
+
+.c:hover {
+    box-shadow: #6ed6f0 1vmin 1vmin;
+    transition: 0.25s ease;
+}
+
+.textBox {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 2rem;
+    padding: 3vmin;
+    border: 1px solid white;
+    background-color: #1a1a1a;
+    box-shadow: black 0 0;
+    transition: 0.25s ease;
+}
+
+.textBox:hover {
+    box-shadow: #e2e2e2 1vmin 1vmin;
+    transform: translate(0, -5%);
+    background-color: #2a2a2a;
+    transition: 0.25s ease;
+}
+
+.imagePreview {
+    position: relative;
+    margin: 2vmin;
+    border: 1px white solid;
+    padding: 2vmin;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    aspect-ratio: 4 / 5;
+    background-color: #181818;
+    transition: 0.25s ease;
+    text-decoration: none;
+}
+
+.imagePreview:hover {
+    background-color: #313131;
+    transform: translateY(-5%);
+    box-shadow: #3e3d3d 0 0 10px, #3e3d3d 0 5px 0;
+    transition: 0.25s ease;
+}
+
+.imagePreview > img {
+    width: 17.5rem;
+    filter: blur(5px);
+    transition: 0.25s ease;
+}
+
+.imagePreview:hover > img {
+    filter: blur(0);
+    transition: 0.25s ease;
+
+}
+
+
+.imagePreview > p {
+    font-size: 2rem;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+}
+
+.imagePreview > hr {
+    margin-top: 1.5vmin;
+    margin-bottom: 2vmin;
+}
+
+.big {
+    font-size: 2.5rem;
+}
+
+.text {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 3vmin;
+    border: 1px solid white;
+    background-color: #1a1a1a;
+}
+
+.image {
+    margin-left: 2vmin;
+    border-left: 1px white solid;
+    border-bottom: 1px white solid;
+    padding: 2vmin;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    aspect-ratio: 4 / 5;
+}
+
+.image > img {
+    width: 30rem;
+}
+
+.image > p {
+    margin-left: auto;
+    font-size: 3rem;
+}
+
+.image > hr {
+    margin-top: 1.5vmin;
+    margin-bottom: 2vmin;
+}
+
+
+
+.overflowX {
+    display: grid;
+    height: 90vmin;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+}
+
+.startContainer {
+    display: flex;
+    margin-top: 2vmin;
+    margin-bottom: 2vmin;
+}
+
+.startButton {
+    font-size: var(--fsize);
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s ease;
+    color: white;
+}
+
+
+.startButton > .ch {
+    display: inline-block;
+    transition: 1s ease;
+}
+
+
+.textBox:hover > .animLetterSpacing {
+    letter-spacing: 2vmin;
+    text-shadow: indianred 0 2px 2px;
+    transition: 1s ease;
+}
+
+.animLetterSpacing {
+    transition: 1s ease;
+}
+
+#navBar {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(17,17, 17, 0.1));;
+}
+
+
+#nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.navBtn {
+    font-size: 2vmin;
+    padding: .75vmin 2vmin;
+    transition: 0.25s ease;
+    color: white;
+    text-decoration: 0;
+}
+
+.navBtn:hover {
+    box-shadow: black 0 5px 0;
+    transform: translate(0, -10%);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(20,20,20, 0.2));;
+    transition: 0.25s ease;
+}
+
+@media screen and (max-width: 450px){
+    .startButton {
+        font-size: 6vmin;
+    }
+
+    .navBtn {
+        font-size: 4vmin;
+    }
+
+    .textBox {
+        font-size: 7vmin;
+
+    }
+}
+
+.horizontalFlex {
+    flex-direction: row;
+}
+
+.bg {
+    background-image: radial-gradient(#212121 5%, #111111 5%);
+    background-color: #111111;
+    background-position: 0 0;
+    background-size: 100px 100px;
+    background-repeat: repeat;
+    width: 100%;
+    height: 120vmin;
+    z-index: -1;
+    position: absolute;
+}
+
+.bgMod {
+    position: fixed;
+    width:100%;
+    height:100%;
+    z-index: -1000;
+}
+
+body {
+    color: white;
+    font-family: "Major Mono Display", monospace;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.startButton:hover > .ch:nth-child(1) {
+    transform: translateX(-120%) translateY(32%) rotate(12deg);
+    transition: 1s ease;
+}
+
+.startButton:hover > .ch:nth-child(2) {
+    transform: translateX(-78%) translateY(-10%) rotate(-15deg);
+    transition: 1s ease;
+}
+.startButton:hover > .ch:nth-child(3) {
+     transform: translateX(-42%) translateY(-15%) rotate(12deg);
+     transition: 1s ease;
+}
+
+.startButton:hover > .ch:nth-child(4) {
+      transform: translateX(30%) translateY(9%) rotate(12deg);
+      transition: 1s ease;
+}
+
+.startButton:hover > .ch:nth-child(5) {
+       transform: translateX(48%) translateY(2%) rotate(-24deg);
+       transition: 1s ease;
+}
+
+.startButton:hover > .ch:nth-child(6) {
+    transform: translateX(68%) translateY(-18%) rotate(-12deg);
+    transition: 1s ease;
+}
+
+.startButton:hover > .ch:nth-child(7) {
+    transform: translateX(76%) translateY(12%) rotate(-20deg);
+    transition: 1s ease;
+}
+
+.startButton:hover > .ch:nth-child(8) {
+    transform: translateX(82%) translateY(20%) rotate(24deg);
+    transition: 1s ease;
+}
+
+.startButton:hover > .ch:nth-child(9) {
+    transform: translateX(120%) translateY(18%) rotate(32deg);
+    transition: 1s ease;
+}
